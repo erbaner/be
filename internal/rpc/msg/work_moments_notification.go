@@ -1,11 +1,11 @@
 package msg
 
 import (
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/log"
-	pbOffice "Open_IM/pkg/proto/office"
-	sdk "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/log"
+	pbOffice "github.com/erbaner/be/pkg/proto/office"
+	sdk "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 )

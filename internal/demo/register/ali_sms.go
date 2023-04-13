@@ -1,12 +1,13 @@
 package register
 
 import (
-	"Open_IM/pkg/common/config"
 	"errors"
 	"fmt"
+
 	openapi "github.com/alibabacloud-go/darabonba-openapi/client"
 	dysmsapi20170525 "github.com/alibabacloud-go/dysmsapi-20170525/v2/client"
 	"github.com/alibabacloud-go/tea/tea"
+	"github.com/erbaner/be/pkg/common/config"
 )
 
 type AliSMS struct {

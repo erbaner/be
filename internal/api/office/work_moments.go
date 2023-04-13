@@ -1,18 +1,19 @@
 package office
 
 import (
-	api "Open_IM/pkg/base_info"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/common/token_verify"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	pbOffice "Open_IM/pkg/proto/office"
-	pbCommon "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
 	"context"
-	"github.com/gin-gonic/gin"
 	"net/http"
 	"strings"
+
+	api "github.com/erbaner/be/pkg/base_info"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/common/token_verify"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	pbOffice "github.com/erbaner/be/pkg/proto/office"
+	pbCommon "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
+	"github.com/gin-gonic/gin"
 )
 
 // @Summary 创建一条工作圈

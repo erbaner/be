@@ -7,10 +7,10 @@
 package gate
 
 import (
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/log"
-	pbRtc "Open_IM/pkg/proto/rtc"
-	open_im_sdk "Open_IM/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/log"
+	pbRtc "github.com/erbaner/be/pkg/proto/rtc"
+	open_im_sdk "github.com/erbaner/be/pkg/proto/sdk_ws"
 	"github.com/golang/protobuf/proto"
 )
 

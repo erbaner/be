@@ -1,8 +1,9 @@
 package kafka
 
 import (
-	"Open_IM/pkg/common/config"
 	"sync"
+
+	"github.com/erbaner/be/pkg/common/config"
 
 	"github.com/Shopify/sarama"
 )

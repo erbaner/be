@@ -1,12 +1,13 @@
 package token_verify
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	commonDB "Open_IM/pkg/common/db"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/utils"
 	"time"
+
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	commonDB "github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/utils"
 
 	go_redis "github.com/go-redis/redis/v8"
 	"github.com/golang-jwt/jwt/v4"
@@ -237,7 +238,7 @@ func ParseRedisInterfaceToken(redisToken interface{}) (*Claims, error) {
 	return GetClaimFromToken(string(redisToken.([]uint8)))
 }
 
-//Validation token, false means failure, true means successful verification
+// Validation token, false means failure, true means successful verification
 func VerifyToken(token, uid string) (bool, error) {
 	claims, err := ParseToken(token, "")
 	if err != nil {

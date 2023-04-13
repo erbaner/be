@@ -7,10 +7,11 @@
 package log
 
 import (
-	"Open_IM/pkg/utils"
-	"github.com/sirupsen/logrus"
 	"runtime"
 	"strings"
+
+	"github.com/erbaner/be/pkg/utils"
+	"github.com/sirupsen/logrus"
 )
 
 type fileHook struct{}

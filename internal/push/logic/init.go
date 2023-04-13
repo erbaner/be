@@ -7,17 +7,18 @@
 package logic
 
 import (
-	pusher "Open_IM/internal/push"
-	fcm "Open_IM/internal/push/fcm"
-	"Open_IM/internal/push/getui"
-	jpush "Open_IM/internal/push/jpush"
-	"Open_IM/internal/push/mobpush"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/kafka"
-	promePkg "Open_IM/pkg/common/prometheus"
-	"Open_IM/pkg/statistics"
 	"fmt"
+
+	pusher "github.com/erbaner/be/internal/push"
+	fcm "github.com/erbaner/be/internal/push/fcm"
+	"github.com/erbaner/be/internal/push/getui"
+	jpush "github.com/erbaner/be/internal/push/jpush"
+	"github.com/erbaner/be/internal/push/mobpush"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/kafka"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
+	"github.com/erbaner/be/pkg/statistics"
 )
 
 var (

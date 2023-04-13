@@ -1,16 +1,17 @@
 package statistics
 
 import (
-	"Open_IM/pkg/cms_api_struct"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	admin "Open_IM/pkg/proto/admin_cms"
-	"Open_IM/pkg/utils"
 	"context"
 	"net/http"
 	"strings"
 	"time"
+
+	"github.com/erbaner/be/pkg/cms_api_struct"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	admin "github.com/erbaner/be/pkg/proto/admin_cms"
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 )

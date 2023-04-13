@@ -1,20 +1,6 @@
 package office
 
 import (
-	"Open_IM/internal/rpc/msg"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	"Open_IM/pkg/common/db/mysql_model/im_mysql_model"
-	imdb "Open_IM/pkg/common/db/mysql_model/im_mysql_model"
-	rocksCache "Open_IM/pkg/common/db/rocks_cache"
-	"Open_IM/pkg/common/log"
-	promePkg "Open_IM/pkg/common/prometheus"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	pbCache "Open_IM/pkg/proto/cache"
-	pbOffice "Open_IM/pkg/proto/office"
-	pbCommon "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
 	"context"
 	"net"
 	"strconv"
@@ -22,6 +8,21 @@ import (
 	"sync"
 	"time"
 	"unsafe"
+
+	"github.com/erbaner/be/internal/rpc/msg"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/common/db/mysql_model/im_mysql_model"
+	imdb "github.com/erbaner/be/pkg/common/db/mysql_model/im_mysql_model"
+	rocksCache "github.com/erbaner/be/pkg/common/db/rocks_cache"
+	"github.com/erbaner/be/pkg/common/log"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	pbCache "github.com/erbaner/be/pkg/proto/cache"
+	pbOffice "github.com/erbaner/be/pkg/proto/office"
+	pbCommon "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
 
 	grpcPrometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
 

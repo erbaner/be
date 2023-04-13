@@ -1,18 +1,19 @@
 package db
 
 import (
-	"Open_IM/pkg/common/config"
-	server_api_params "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
 	"context"
 	"errors"
 	"fmt"
-	"go.mongodb.org/mongo-driver/bson/primitive"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/erbaner/be/pkg/common/config"
+	server_api_params "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
+	"go.mongodb.org/mongo-driver/bson/primitive"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 
 	"go.mongodb.org/mongo-driver/bson"
 )

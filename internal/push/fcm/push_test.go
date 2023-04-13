@@ -1,10 +1,11 @@
 package fcm
 
 import (
-	"Open_IM/internal/push"
 	"fmt"
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/erbaner/be/internal/push"
+	"github.com/stretchr/testify/assert"
 )
 
 func Test_Push(t *testing.T) {

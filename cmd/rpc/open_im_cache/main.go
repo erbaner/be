@@ -1,10 +1,10 @@
 package main
 
 import (
-	rpcCache "Open_IM/internal/rpc/cache"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	promePkg "Open_IM/pkg/common/prometheus"
+	rpcCache "github.com/erbaner/be/internal/rpc/cache"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
 
 	"flag"
 	"fmt"

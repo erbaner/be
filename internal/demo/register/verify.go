@@ -1,13 +1,14 @@
 package register
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/common/utils"
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/common/utils"
+	"github.com/gin-gonic/gin"
 )
 
 type paramsCertification struct {

@@ -1,17 +1,18 @@
 package group
 
 import (
-	"Open_IM/pkg/cms_api_struct"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	commonPb "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
 	"context"
 	"net/http"
 	"strings"
 
-	pbGroup "Open_IM/pkg/proto/group"
+	"github.com/erbaner/be/pkg/cms_api_struct"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	commonPb "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
+
+	pbGroup "github.com/erbaner/be/pkg/proto/group"
 
 	"github.com/gin-gonic/gin"
 )

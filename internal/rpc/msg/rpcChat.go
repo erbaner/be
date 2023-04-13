@@ -1,18 +1,19 @@
 package msg
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	"Open_IM/pkg/common/kafka"
-	"Open_IM/pkg/common/log"
-	promePkg "Open_IM/pkg/common/prometheus"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	"Open_IM/pkg/proto/msg"
-	"Open_IM/pkg/utils"
 	"net"
 	"strconv"
 	"strings"
+
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/common/kafka"
+	"github.com/erbaner/be/pkg/common/log"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	"github.com/erbaner/be/pkg/proto/msg"
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/golang/protobuf/proto"
 

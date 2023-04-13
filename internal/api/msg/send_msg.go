@@ -1,16 +1,18 @@
 package msg
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/log"
-	pbChat "Open_IM/pkg/proto/msg"
-	open_im_sdk "Open_IM/pkg/proto/sdk_ws"
 	"context"
 
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	"github.com/gin-gonic/gin"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/log"
+	pbChat "github.com/erbaner/be/pkg/proto/msg"
+	open_im_sdk "github.com/erbaner/be/pkg/proto/sdk_ws"
+
 	"net/http"
 	"strings"
+
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	"github.com/gin-gonic/gin"
 )
 
 type paramsUserSendMsg struct {

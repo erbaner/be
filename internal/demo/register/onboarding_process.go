@@ -1,24 +1,25 @@
 package register
 
 import (
-	"Open_IM/internal/api/manage"
-	"Open_IM/internal/rpc/msg"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	imdb "Open_IM/pkg/common/db/mysql_model/im_mysql_model"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	groupRpc "Open_IM/pkg/proto/group"
+	"github.com/erbaner/be/internal/api/manage"
+	"github.com/erbaner/be/internal/rpc/msg"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	imdb "github.com/erbaner/be/pkg/common/db/mysql_model/im_mysql_model"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	groupRpc "github.com/erbaner/be/pkg/proto/group"
 
-	organizationRpc "Open_IM/pkg/proto/organization"
-	commonPb "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
 	"context"
 	"errors"
 	"fmt"
 	"math/rand"
 	"strings"
 	"time"
+
+	organizationRpc "github.com/erbaner/be/pkg/proto/organization"
+	commonPb "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/golang/protobuf/proto"
 )

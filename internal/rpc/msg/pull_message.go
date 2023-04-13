@@ -1,15 +1,16 @@
 package msg
 
 import (
-	"Open_IM/pkg/utils"
 	"context"
+
+	"github.com/erbaner/be/pkg/utils"
 	go_redis "github.com/go-redis/redis/v8"
 
-	commonDB "Open_IM/pkg/common/db"
-	"Open_IM/pkg/common/log"
-	open_im_sdk "Open_IM/pkg/proto/sdk_ws"
+	commonDB "github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/common/log"
+	open_im_sdk "github.com/erbaner/be/pkg/proto/sdk_ws"
 
-	promePkg "Open_IM/pkg/common/prometheus"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
 )
 
 func (rpc *rpcChat) GetMaxAndMinSeq(_ context.Context, in *open_im_sdk.GetMaxAndMinSeqReq) (*open_im_sdk.GetMaxAndMinSeqResp, error) {
@@ -115,12 +116,12 @@ func (s MsgFormats) Len() int {
 	return len(s)
 }
 
-//Implement the sort.Interface interface comparison element method
+// Implement the sort.Interface interface comparison element method
 func (s MsgFormats) Less(i, j int) bool {
 	return s[i].SendTime < s[j].SendTime
 }
 
-//Implement the sort.Interface interface exchange element method
+// Implement the sort.Interface interface exchange element method
 func (s MsgFormats) Swap(i, j int) {
 	s[i], s[j] = s[j], s[i]
 }

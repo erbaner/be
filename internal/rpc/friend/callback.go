@@ -1,15 +1,17 @@
 package friend
 
 import (
-	cbApi "Open_IM/pkg/call_back_struct"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/http"
-	"Open_IM/pkg/common/log"
-	pbFriend "Open_IM/pkg/proto/friend"
-	//"Open_IM/pkg/proto/msg"
-	"Open_IM/pkg/utils"
+	cbApi "github.com/erbaner/be/pkg/call_back_struct"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/http"
+	"github.com/erbaner/be/pkg/common/log"
+	pbFriend "github.com/erbaner/be/pkg/proto/friend"
+
+	//"github.com/erbaner/be/pkg/proto/msg"
 	http2 "net/http"
+
+	"github.com/erbaner/be/pkg/utils"
 )
 
 func callbackBeforeAddFriend(req *pbFriend.AddFriendReq) cbApi.CommonCallbackResp {

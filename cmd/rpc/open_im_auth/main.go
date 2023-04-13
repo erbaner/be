@@ -1,12 +1,13 @@
 package main
 
 import (
-	rpcAuth "Open_IM/internal/rpc/auth"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	promePkg "Open_IM/pkg/common/prometheus"
 	"flag"
 	"fmt"
+
+	rpcAuth "github.com/erbaner/be/internal/rpc/auth"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
 )
 
 func main() {

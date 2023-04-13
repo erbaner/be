@@ -7,7 +7,7 @@
 package pbAuth
 
 import (
-	sdk_ws "Open_IM/pkg/proto/sdk_ws"
+	sdk_ws "github.com/erbaner/be/pkg/proto/sdk_ws"
 	context "context"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"

@@ -1,25 +1,26 @@
 package auth
 
 import (
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	imdb "Open_IM/pkg/common/db/mysql_model/im_mysql_model"
-	"Open_IM/pkg/common/log"
-	promePkg "Open_IM/pkg/common/prometheus"
-	"Open_IM/pkg/common/token_verify"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	pbAuth "Open_IM/pkg/proto/auth"
-	pbRelay "Open_IM/pkg/proto/relay"
-	"Open_IM/pkg/utils"
 	"context"
 	"errors"
 	"net"
 	"strconv"
 	"strings"
 
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	imdb "github.com/erbaner/be/pkg/common/db/mysql_model/im_mysql_model"
+	"github.com/erbaner/be/pkg/common/log"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
+	"github.com/erbaner/be/pkg/common/token_verify"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	pbAuth "github.com/erbaner/be/pkg/proto/auth"
+	pbRelay "github.com/erbaner/be/pkg/proto/relay"
+	"github.com/erbaner/be/pkg/utils"
+
 	grpcPrometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
 
-	"Open_IM/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/config"
 
 	"google.golang.org/grpc"
 )

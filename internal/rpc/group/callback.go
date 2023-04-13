@@ -1,15 +1,16 @@
 package group
 
 import (
-	cbApi "Open_IM/pkg/call_back_struct"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	"Open_IM/pkg/common/http"
-	"Open_IM/pkg/common/log"
-	pbGroup "Open_IM/pkg/proto/group"
-	"Open_IM/pkg/utils"
 	http2 "net/http"
+
+	cbApi "github.com/erbaner/be/pkg/call_back_struct"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/common/http"
+	"github.com/erbaner/be/pkg/common/log"
+	pbGroup "github.com/erbaner/be/pkg/proto/group"
+	"github.com/erbaner/be/pkg/utils"
 
 	"google.golang.org/protobuf/types/known/wrapperspb"
 )

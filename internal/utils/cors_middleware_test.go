@@ -1,10 +1,11 @@
 package utils
 
 import (
-	"Open_IM/pkg/utils"
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"

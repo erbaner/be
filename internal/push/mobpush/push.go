@@ -1,14 +1,15 @@
 package mobpush
 
 import (
-	"Open_IM/internal/push"
-	"Open_IM/internal/push/mobpush/common"
-	"Open_IM/internal/push/mobpush/requestParams"
-	"Open_IM/pkg/common/config"
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
 	"strings"
+
+	"github.com/erbaner/be/internal/push"
+	"github.com/erbaner/be/internal/push/mobpush/common"
+	"github.com/erbaner/be/internal/push/mobpush/requestParams"
+	"github.com/erbaner/be/pkg/common/config"
 )
 
 var (

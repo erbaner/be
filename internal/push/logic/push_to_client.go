@@ -7,21 +7,22 @@
 package logic
 
 import (
-	"Open_IM/internal/push"
-	utils2 "Open_IM/internal/utils"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	pbPush "Open_IM/pkg/proto/push"
-	pbRelay "Open_IM/pkg/proto/relay"
-	pbRtc "Open_IM/pkg/proto/rtc"
-	"Open_IM/pkg/utils"
 	"context"
 	"strings"
 
-	promePkg "Open_IM/pkg/common/prometheus"
+	"github.com/erbaner/be/internal/push"
+	utils2 "github.com/erbaner/be/internal/utils"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	pbPush "github.com/erbaner/be/pkg/proto/push"
+	pbRelay "github.com/erbaner/be/pkg/proto/relay"
+	pbRtc "github.com/erbaner/be/pkg/proto/rtc"
+	"github.com/erbaner/be/pkg/utils"
+
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
 
 	"github.com/golang/protobuf/proto"
 )

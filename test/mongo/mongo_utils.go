@@ -1,14 +1,15 @@
 package mongo
 
 import (
-	"Open_IM/pkg/common/config"
-	server_api_params "Open_IM/pkg/proto/sdk_ws"
 	"context"
 	"fmt"
+	"time"
+
+	"github.com/erbaner/be/pkg/common/config"
+	server_api_params "github.com/erbaner/be/pkg/proto/sdk_ws"
 	"github.com/golang/protobuf/proto"
 	"go.mongodb.org/mongo-driver/mongo"
 	"gopkg.in/mgo.v2/bson"
-	"time"
 )
 
 var (

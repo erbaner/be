@@ -1,24 +1,25 @@
 package main
 
 import (
-	_ "Open_IM/cmd/open_im_api/docs"
-	apiAuth "Open_IM/internal/api/auth"
-	clientInit "Open_IM/internal/api/client_init"
-	"Open_IM/internal/api/conversation"
-	"Open_IM/internal/api/friend"
-	"Open_IM/internal/api/group"
-	"Open_IM/internal/api/manage"
-	apiChat "Open_IM/internal/api/msg"
-	"Open_IM/internal/api/office"
-	"Open_IM/internal/api/organization"
-	apiThird "Open_IM/internal/api/third"
-	"Open_IM/internal/api/user"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	"Open_IM/pkg/utils"
 	"flag"
 	"fmt"
+
+	_ "github.com/erbaner/be/cmd/open_im_api/docs"
+	apiAuth "github.com/erbaner/be/internal/api/auth"
+	clientInit "github.com/erbaner/be/internal/api/client_init"
+	"github.com/erbaner/be/internal/api/conversation"
+	"github.com/erbaner/be/internal/api/friend"
+	"github.com/erbaner/be/internal/api/group"
+	"github.com/erbaner/be/internal/api/manage"
+	apiChat "github.com/erbaner/be/internal/api/msg"
+	"github.com/erbaner/be/internal/api/office"
+	"github.com/erbaner/be/internal/api/organization"
+	apiThird "github.com/erbaner/be/internal/api/third"
+	"github.com/erbaner/be/internal/api/user"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	"github.com/erbaner/be/pkg/utils"
 
 	//_ "github.com/razeencheng/demo-go/swaggo-gin/docs"
 	"io"
@@ -30,8 +31,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 	//"syscall"
-	"Open_IM/pkg/common/constant"
-	promePkg "Open_IM/pkg/common/prometheus"
+	"github.com/erbaner/be/pkg/common/constant"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
 )
 
 // @title open-IM-Server API

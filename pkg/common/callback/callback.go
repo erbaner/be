@@ -1,8 +1,8 @@
 package callback
 
 import (
-	"Open_IM/pkg/common/constant"
-	server_api_params "Open_IM/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/common/constant"
+	server_api_params "github.com/erbaner/be/pkg/proto/sdk_ws"
 	"github.com/golang/protobuf/proto"
 )
 

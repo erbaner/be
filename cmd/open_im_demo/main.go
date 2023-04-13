@@ -1,19 +1,20 @@
 package main
 
 import (
-	"Open_IM/internal/demo/register"
-	"Open_IM/pkg/utils"
 	"flag"
 	"fmt"
 	"io"
 	"os"
 	"strconv"
 
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/log"
+	"github.com/erbaner/be/internal/demo/register"
+	"github.com/erbaner/be/pkg/utils"
 
-	promePkg "Open_IM/pkg/common/prometheus"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/log"
+
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
 
 	"github.com/gin-gonic/gin"
 )

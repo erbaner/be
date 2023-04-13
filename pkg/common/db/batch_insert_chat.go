@@ -1,14 +1,15 @@
 package db
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/log"
-	promePkg "Open_IM/pkg/common/prometheus"
-	pbMsg "Open_IM/pkg/proto/msg"
-	"Open_IM/pkg/utils"
 	"context"
 	"errors"
+
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/log"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
+	pbMsg "github.com/erbaner/be/pkg/proto/msg"
+	"github.com/erbaner/be/pkg/utils"
 	go_redis "github.com/go-redis/redis/v8"
 	"github.com/golang/protobuf/proto"
 	"go.mongodb.org/mongo-driver/bson"

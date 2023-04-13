@@ -1,14 +1,15 @@
 package utils
 
 import (
-	db "Open_IM/pkg/common/db"
-	imdb "Open_IM/pkg/common/db/mysql_model/im_mysql_model"
-	"Open_IM/pkg/common/token_verify"
-	open_im_sdk "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
 	"math/rand"
 	"strconv"
 	"time"
+
+	db "github.com/erbaner/be/pkg/common/db"
+	imdb "github.com/erbaner/be/pkg/common/db/mysql_model/im_mysql_model"
+	"github.com/erbaner/be/pkg/common/token_verify"
+	open_im_sdk "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
 )
 
 func OperationIDGenerator() string {
@@ -36,7 +37,6 @@ func FriendDBCopyOpenIM(dst *open_im_sdk.FriendInfo, src *db.Friend) error {
 	return nil
 }
 
-//
 func FriendRequestOpenIMCopyDB(dst *db.FriendRequest, src *open_im_sdk.FriendRequest) {
 	utils.CopyStructFields(dst, src)
 	dst.CreateTime = utils.UnixSecondToTime(int64(src.CreateTime))

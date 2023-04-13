@@ -1,8 +1,9 @@
 package im_mysql_model
 
 import (
-	"Open_IM/pkg/common/db"
 	"time"
+
+	"github.com/erbaner/be/pkg/common/db"
 )
 
 func UpdateAppVersion(appType int, version string, forceUpdate bool, fileName, yamlName, updateLog string) error {

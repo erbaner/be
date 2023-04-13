@@ -1,10 +1,11 @@
 package prometheus
 
 import (
-	"Open_IM/pkg/common/config"
 	"bytes"
 	"net/http"
 	"strconv"
+
+	"github.com/erbaner/be/pkg/common/config"
 
 	"github.com/gin-gonic/gin"
 	"github.com/prometheus/client_golang/prometheus"

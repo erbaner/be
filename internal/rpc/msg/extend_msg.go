@@ -1,13 +1,14 @@
 package msg
 
 import (
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/proto/msg"
-	"Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
 	"context"
+
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/proto/msg"
+	server_api_params "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
 	go_redis "github.com/go-redis/redis/v8"
 
 	"time"

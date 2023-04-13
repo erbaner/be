@@ -1,12 +1,13 @@
 package apiThird
 
 import (
-	api "Open_IM/pkg/base_info"
-	"Open_IM/pkg/common/db"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/common/token_verify"
-	"Open_IM/pkg/utils"
 	"net/http"
+
+	api "github.com/erbaner/be/pkg/base_info"
+	"github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/common/token_verify"
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 )

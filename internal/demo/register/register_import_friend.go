@@ -1,14 +1,15 @@
 package register
 
 import (
-	"Open_IM/pkg/common/config"
-	imdb "Open_IM/pkg/common/db/mysql_model/im_mysql_model"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	pbFriend "Open_IM/pkg/proto/friend"
-	"Open_IM/pkg/utils"
 	"context"
 	"strings"
+
+	"github.com/erbaner/be/pkg/common/config"
+	imdb "github.com/erbaner/be/pkg/common/db/mysql_model/im_mysql_model"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	pbFriend "github.com/erbaner/be/pkg/proto/friend"
+	"github.com/erbaner/be/pkg/utils"
 )
 
 var ChImportFriend chan *pbFriend.ImportFriendReq

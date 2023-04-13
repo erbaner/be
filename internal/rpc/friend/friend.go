@@ -1,26 +1,27 @@
 package friend
 
 import (
-	chat "Open_IM/internal/rpc/msg"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	imdb "Open_IM/pkg/common/db/mysql_model/im_mysql_model"
-	rocksCache "Open_IM/pkg/common/db/rocks_cache"
-	"Open_IM/pkg/common/log"
-	promePkg "Open_IM/pkg/common/prometheus"
-	"Open_IM/pkg/common/token_verify"
-	cp "Open_IM/pkg/common/utils"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	pbCache "Open_IM/pkg/proto/cache"
-	pbFriend "Open_IM/pkg/proto/friend"
-	sdkws "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
 	"context"
 	"net"
 	"strconv"
 	"strings"
 	"time"
+
+	chat "github.com/erbaner/be/internal/rpc/msg"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	imdb "github.com/erbaner/be/pkg/common/db/mysql_model/im_mysql_model"
+	rocksCache "github.com/erbaner/be/pkg/common/db/rocks_cache"
+	"github.com/erbaner/be/pkg/common/log"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
+	"github.com/erbaner/be/pkg/common/token_verify"
+	cp "github.com/erbaner/be/pkg/common/utils"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	pbCache "github.com/erbaner/be/pkg/proto/cache"
+	pbFriend "github.com/erbaner/be/pkg/proto/friend"
+	sdkws "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
 
 	grpcPrometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
 
@@ -316,7 +317,7 @@ func (s *friendServer) ImportFriend(ctx context.Context, req *pbFriend.ImportFri
 	return &resp, nil
 }
 
-//process Friend application
+// process Friend application
 func (s *friendServer) AddFriendResponse(ctx context.Context, req *pbFriend.AddFriendResponseReq) (*pbFriend.AddFriendResponseResp, error) {
 	log.NewInfo(req.CommID.OperationID, "AddFriendResponse args ", req.String())
 	if !token_verify.CheckAccess(req.CommID.OpUserID, req.CommID.FromUserID) {
@@ -615,7 +616,7 @@ func (s *friendServer) GetFriendList(ctx context.Context, req *pbFriend.GetFrien
 	return &pbFriend.GetFriendListResp{FriendInfoList: userInfoList}, nil
 }
 
-//received
+// received
 func (s *friendServer) GetFriendApplyList(ctx context.Context, req *pbFriend.GetFriendApplyListReq) (*pbFriend.GetFriendApplyListResp, error) {
 	log.NewInfo(req.CommID.OperationID, "GetFriendApplyList args ", req.String())
 	//Parse token, to find current user information

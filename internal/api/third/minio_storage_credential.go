@@ -1,22 +1,23 @@
 package apiThird
 
 import (
-	api "Open_IM/pkg/base_info"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	imdb "Open_IM/pkg/common/db/mysql_model/im_mysql_model"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/common/token_verify"
-	_ "Open_IM/pkg/common/token_verify"
-	"Open_IM/pkg/utils"
 	"context"
+	"net/http"
+	"strconv"
+	"strings"
+
+	api "github.com/erbaner/be/pkg/base_info"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	imdb "github.com/erbaner/be/pkg/common/db/mysql_model/im_mysql_model"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/common/token_verify"
+	_ "github.com/erbaner/be/pkg/common/token_verify"
+	"github.com/erbaner/be/pkg/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/minio/minio-go/v7"
 	_ "github.com/minio/minio-go/v7"
 	cr "github.com/minio/minio-go/v7/pkg/credentials"
-	"net/http"
-	"strconv"
-	"strings"
 )
 
 // @Summary minio上传文件(web api)

@@ -1,7 +1,6 @@
 package utils
 
 import (
-	"Open_IM/pkg/common/constant"
 	"fmt"
 	"math/rand"
 	"os"
@@ -9,6 +8,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/erbaner/be/pkg/common/constant"
 )
 
 const (

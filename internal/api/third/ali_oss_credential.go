@@ -1,21 +1,23 @@
 package apiThird
 
 import (
-	api "Open_IM/pkg/base_info"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/common/token_verify"
 	"fmt"
+
 	openapi "github.com/alibabacloud-go/darabonba-openapi/client"
 	sts20150401 "github.com/alibabacloud-go/sts-20150401/client"
 	"github.com/alibabacloud-go/tea/tea"
+	api "github.com/erbaner/be/pkg/base_info"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/common/token_verify"
 	"github.com/fatih/structs"
 
 	//"github.com/fatih/structs"
-	"github.com/gin-gonic/gin"
 	"net/http"
 	"time"
+
+	"github.com/gin-gonic/gin"
 )
 
 var stsClient *sts20150401.Client

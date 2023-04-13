@@ -1,12 +1,13 @@
 package msg
 
 import (
-	commonDB "Open_IM/pkg/common/db"
-	"Open_IM/pkg/common/log"
-	promePkg "Open_IM/pkg/common/prometheus"
-	"Open_IM/pkg/proto/msg"
-	"Open_IM/pkg/utils"
 	"context"
+
+	commonDB "github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/common/log"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
+	"github.com/erbaner/be/pkg/proto/msg"
+	"github.com/erbaner/be/pkg/utils"
 	go_redis "github.com/go-redis/redis/v8"
 )
 

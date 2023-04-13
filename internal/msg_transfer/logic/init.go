@@ -1,13 +1,14 @@
 package logic
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/kafka"
-	promePkg "Open_IM/pkg/common/prometheus"
-	"Open_IM/pkg/statistics"
 	"fmt"
 	"sync"
+
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/kafka"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
+	"github.com/erbaner/be/pkg/statistics"
 )
 
 const OnlineTopicBusy = 1

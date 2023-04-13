@@ -1,9 +1,10 @@
 package im_mysql_model
 
 import (
-	"Open_IM/pkg/common/db"
 	"fmt"
 	"time"
+
+	"github.com/erbaner/be/pkg/common/db"
 )
 
 func InsertToFriend(toInsertFollow *db.Friend) error {

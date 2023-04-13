@@ -1,11 +1,12 @@
 package utils
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/token_verify"
 	"testing"
 	"time"
+
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/token_verify"
 
 	"github.com/stretchr/testify/assert"
 )

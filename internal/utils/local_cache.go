@@ -1,16 +1,17 @@
 package utils
 
 import (
-	"Open_IM/pkg/common/config"
-	rocksCache "Open_IM/pkg/common/db/rocks_cache"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	pbCache "Open_IM/pkg/proto/cache"
-	"Open_IM/pkg/utils"
 	"context"
 	"errors"
 	"strings"
 	"sync"
+
+	"github.com/erbaner/be/pkg/common/config"
+	rocksCache "github.com/erbaner/be/pkg/common/db/rocks_cache"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	pbCache "github.com/erbaner/be/pkg/proto/cache"
+	"github.com/erbaner/be/pkg/utils"
 )
 
 type GroupMemberUserIDListHash struct {

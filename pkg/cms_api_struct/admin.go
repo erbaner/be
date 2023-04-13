@@ -1,8 +1,8 @@
 package cms_api_struct
 
 import (
-	"Open_IM/pkg/base_info"
-	server_api_params "Open_IM/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/base_info"
+	server_api_params "github.com/erbaner/be/pkg/proto/sdk_ws"
 )
 
 type AdminLoginRequest struct {

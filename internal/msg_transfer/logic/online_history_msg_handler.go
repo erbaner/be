@@ -1,22 +1,23 @@
 package logic
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	kfk "Open_IM/pkg/common/kafka"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	pbMsg "Open_IM/pkg/proto/msg"
-	pbPush "Open_IM/pkg/proto/push"
-	"Open_IM/pkg/utils"
 	"context"
-	"github.com/Shopify/sarama"
-	"github.com/golang/protobuf/proto"
 	"hash/crc32"
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/Shopify/sarama"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	kfk "github.com/erbaner/be/pkg/common/kafka"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	pbMsg "github.com/erbaner/be/pkg/proto/msg"
+	pbPush "github.com/erbaner/be/pkg/proto/push"
+	"github.com/erbaner/be/pkg/utils"
+	"github.com/golang/protobuf/proto"
 )
 
 type MsgChannelValue struct {

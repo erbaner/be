@@ -1,10 +1,10 @@
 package logic
 
 import (
-	"Open_IM/pkg/common/db"
-	"Open_IM/pkg/common/log"
-	pbMsg "Open_IM/pkg/proto/msg"
-	"Open_IM/pkg/utils"
+	"github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/common/log"
+	pbMsg "github.com/erbaner/be/pkg/proto/msg"
+	"github.com/erbaner/be/pkg/utils"
 )
 
 func saveUserChat(uid string, msg *pbMsg.MsgDataToMQ) error {

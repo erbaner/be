@@ -1,10 +1,11 @@
 package main
 
 import (
-	"Open_IM/internal/cron_task"
 	"flag"
 	"fmt"
 	"time"
+
+	cronTask "github.com/erbaner/be/internal/cron_task"
 )
 
 func main() {

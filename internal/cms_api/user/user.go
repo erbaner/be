@@ -1,17 +1,18 @@
 package user
 
 import (
-	"Open_IM/pkg/cms_api_struct"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	pbAdminCms "Open_IM/pkg/proto/admin_cms"
-	commonPb "Open_IM/pkg/proto/sdk_ws"
-	pb "Open_IM/pkg/proto/user"
-	"Open_IM/pkg/utils"
 	"context"
 	"net/http"
 	"strings"
+
+	"github.com/erbaner/be/pkg/cms_api_struct"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	pbAdminCms "github.com/erbaner/be/pkg/proto/admin_cms"
+	commonPb "github.com/erbaner/be/pkg/proto/sdk_ws"
+	pb "github.com/erbaner/be/pkg/proto/user"
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 )

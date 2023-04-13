@@ -1,8 +1,8 @@
 package call_back_struct
 
 import (
-	"Open_IM/pkg/proto/group"
-	commonPb "Open_IM/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/proto/group"
+	commonPb "github.com/erbaner/be/pkg/proto/sdk_ws"
 )
 
 type CallbackBeforeCreateGroupReq struct {

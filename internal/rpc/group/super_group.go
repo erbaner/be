@@ -1,13 +1,14 @@
 package group
 
 import (
-	rocksCache "Open_IM/pkg/common/db/rocks_cache"
-	"Open_IM/pkg/common/log"
-	cp "Open_IM/pkg/common/utils"
-	pbGroup "Open_IM/pkg/proto/group"
-	commonPb "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
 	"context"
+
+	rocksCache "github.com/erbaner/be/pkg/common/db/rocks_cache"
+	"github.com/erbaner/be/pkg/common/log"
+	cp "github.com/erbaner/be/pkg/common/utils"
+	pbGroup "github.com/erbaner/be/pkg/proto/group"
+	commonPb "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/go-redis/redis/v8"
 )

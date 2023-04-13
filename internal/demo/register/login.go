@@ -1,15 +1,16 @@
 package register
 
 import (
-	api "Open_IM/pkg/base_info"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db/mysql_model/im_mysql_model"
-	http2 "Open_IM/pkg/common/http"
-	"Open_IM/pkg/common/log"
 	"encoding/json"
 	"fmt"
 	"net/http"
+
+	api "github.com/erbaner/be/pkg/base_info"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db/mysql_model/im_mysql_model"
+	http2 "github.com/erbaner/be/pkg/common/http"
+	"github.com/erbaner/be/pkg/common/log"
 
 	"github.com/gin-gonic/gin"
 )

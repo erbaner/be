@@ -1,12 +1,13 @@
 package register
 
 import (
-	"Open_IM/pkg/common/constant"
-	imdb "Open_IM/pkg/common/db/mysql_model/im_mysql_model"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/utils"
 	"errors"
 	"net/http"
+
+	"github.com/erbaner/be/pkg/common/constant"
+	imdb "github.com/erbaner/be/pkg/common/db/mysql_model/im_mysql_model"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"

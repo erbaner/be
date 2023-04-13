@@ -1,7 +1,7 @@
 package requestBody
 
 import (
-	"Open_IM/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/config"
 )
 
 type Notification struct {

@@ -1,8 +1,9 @@
 package statistics
 
 import (
-	"Open_IM/pkg/common/log"
 	"time"
+
+	"github.com/erbaner/be/pkg/common/log"
 )
 
 type Statistics struct {

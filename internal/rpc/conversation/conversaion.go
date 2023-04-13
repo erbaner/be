@@ -1,24 +1,25 @@
 package conversation
 
 import (
-	chat "Open_IM/internal/rpc/msg"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	imdb "Open_IM/pkg/common/db/mysql_model/im_mysql_model"
-	rocksCache "Open_IM/pkg/common/db/rocks_cache"
-	"Open_IM/pkg/common/log"
-	promePkg "Open_IM/pkg/common/prometheus"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	pbConversation "Open_IM/pkg/proto/conversation"
-	"Open_IM/pkg/utils"
 	"context"
 	"net"
 	"strconv"
 	"strings"
 
+	chat "github.com/erbaner/be/internal/rpc/msg"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	imdb "github.com/erbaner/be/pkg/common/db/mysql_model/im_mysql_model"
+	rocksCache "github.com/erbaner/be/pkg/common/db/rocks_cache"
+	"github.com/erbaner/be/pkg/common/log"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	pbConversation "github.com/erbaner/be/pkg/proto/conversation"
+	"github.com/erbaner/be/pkg/utils"
+
 	grpcPrometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
 
-	"Open_IM/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/config"
 
 	"google.golang.org/grpc"
 )

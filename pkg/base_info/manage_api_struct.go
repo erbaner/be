@@ -1,9 +1,9 @@
 package base_info
 
 import (
-	pbRelay "Open_IM/pkg/proto/relay"
-	server_api_params "Open_IM/pkg/proto/sdk_ws"
-	pbUser "Open_IM/pkg/proto/user"
+	pbRelay "github.com/erbaner/be/pkg/proto/relay"
+	server_api_params "github.com/erbaner/be/pkg/proto/sdk_ws"
+	pbUser "github.com/erbaner/be/pkg/proto/user"
 )
 
 type DeleteUsersReq struct {

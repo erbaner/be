@@ -18,6 +18,7 @@ BINARY_NAME=${NAME}
 endif
 
 build:
+	echo "----> build"
 	CGO_ENABLED=0 GOOS=${OS} GOARCH=${ARCH} go build -ldflags="-w -s"
 
 run:
@@ -28,6 +29,7 @@ gotool:
 	go vet ./
 
 install:build
+	echo "----> install"
 	mv ${BINARY_NAME} ${BIN_DIR}
 
 clean:

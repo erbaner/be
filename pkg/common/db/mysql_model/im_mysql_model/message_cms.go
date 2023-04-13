@@ -1,9 +1,10 @@
 package im_mysql_model
 
 import (
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
 	"fmt"
+
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
 )
 
 func GetChatLog(chatLog *db.ChatLog, pageNumber, showNumber int32, contentTypeList []int32) (int64, []db.ChatLog, error) {

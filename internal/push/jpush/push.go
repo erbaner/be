@@ -1,14 +1,15 @@
 package push
 
 import (
-	"Open_IM/internal/push"
-	"Open_IM/internal/push/jpush/common"
-	"Open_IM/internal/push/jpush/requestBody"
-	"Open_IM/pkg/common/config"
 	"bytes"
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
+
+	"github.com/erbaner/be/internal/push"
+	"github.com/erbaner/be/internal/push/jpush/common"
+	"github.com/erbaner/be/internal/push/jpush/requestBody"
+	"github.com/erbaner/be/pkg/common/config"
 )
 
 var (

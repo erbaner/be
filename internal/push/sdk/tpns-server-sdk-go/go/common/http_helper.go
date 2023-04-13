@@ -1,11 +1,12 @@
 package common
 
 import (
-	tpns "Open_IM/internal/push/sdk/tpns-server-sdk-go/go"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"net/http"
+
+	tpns "github.com/erbaner/be/internal/push/sdk/tpns-server-sdk-go/go"
 )
 
 func PushAndGetResult(pushReq *http.Request) {

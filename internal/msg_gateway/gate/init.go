@@ -1,14 +1,15 @@
 package gate
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
 
-	"Open_IM/pkg/statistics"
 	"fmt"
 	"sync"
 
-	promePkg "Open_IM/pkg/common/prometheus"
+	"github.com/erbaner/be/pkg/statistics"
+
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
 
 	"github.com/go-playground/validator/v10"
 )

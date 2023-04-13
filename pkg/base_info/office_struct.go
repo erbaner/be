@@ -1,7 +1,7 @@
 package base_info
 
 import (
-	pbOffice "Open_IM/pkg/proto/office"
+	pbOffice "github.com/erbaner/be/pkg/proto/office"
 )
 
 type GetUserTagsReq struct {

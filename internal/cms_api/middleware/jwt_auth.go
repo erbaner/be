@@ -1,11 +1,12 @@
 package middleware
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/common/token_verify"
-	"Open_IM/pkg/utils"
 	"net/http"
+
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/common/token_verify"
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 )

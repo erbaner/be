@@ -1,9 +1,10 @@
 package im_mysql_model
 
 import (
-	"Open_IM/pkg/common/db"
-	"Open_IM/pkg/utils"
 	"time"
+
+	"github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/utils"
 )
 
 //type FriendRequest struct {
@@ -28,7 +29,7 @@ func GetReceivedFriendsApplicationListByUserID(ToUserID string) ([]db.FriendRequ
 	return usersInfo, nil
 }
 
-//I apply to add somebody
+// I apply to add somebody
 func GetSendFriendApplicationListByUserID(FromUserID string) ([]db.FriendRequest, error) {
 	var usersInfo []db.FriendRequest
 	err := db.DB.MysqlDB.DefaultGormDB().Table("friend_requests").Where("from_user_id=?", FromUserID).Find(&usersInfo).Error
@@ -38,7 +39,7 @@ func GetSendFriendApplicationListByUserID(FromUserID string) ([]db.FriendRequest
 	return usersInfo, nil
 }
 
-//FromUserId apply to add ToUserID
+// FromUserId apply to add ToUserID
 func GetFriendApplicationByBothUserID(FromUserID, ToUserID string) (*db.FriendRequest, error) {
 	var friendRequest db.FriendRequest
 	err := db.DB.MysqlDB.DefaultGormDB().Table("friend_requests").Where("from_user_id=? and to_user_id=?", FromUserID, ToUserID).Take(&friendRequest).Error

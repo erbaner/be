@@ -1,16 +1,17 @@
 package group
 
 import (
-	api "Open_IM/pkg/base_info"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/common/token_verify"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	rpc "Open_IM/pkg/proto/group"
-	open_im_sdk "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
 	"context"
+
+	api "github.com/erbaner/be/pkg/base_info"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/common/token_verify"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	rpc "github.com/erbaner/be/pkg/proto/group"
+	open_im_sdk "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/golang/protobuf/ptypes/wrappers"
 	"google.golang.org/grpc"
@@ -20,7 +21,7 @@ import (
 	"net/http"
 	"strings"
 
-	jsonData "Open_IM/internal/utils"
+	jsonData "github.com/erbaner/be/internal/utils"
 )
 
 // @Summary 把用户踢出群组

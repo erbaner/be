@@ -1,13 +1,14 @@
 package main
 
 import (
-	"Open_IM/internal/push/logic"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/log"
 	"flag"
 	"fmt"
 	"sync"
+
+	"github.com/erbaner/be/internal/push/logic"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/log"
 )
 
 func main() {

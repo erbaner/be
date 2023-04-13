@@ -7,18 +7,18 @@
 package logic
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db/mysql_model/im_mysql_msg_model"
-	kfk "Open_IM/pkg/common/kafka"
-	"Open_IM/pkg/common/log"
-	pbMsg "Open_IM/pkg/proto/msg"
-	"Open_IM/pkg/utils"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db/mysql_model/im_mysql_msg_model"
+	kfk "github.com/erbaner/be/pkg/common/kafka"
+	"github.com/erbaner/be/pkg/common/log"
+	pbMsg "github.com/erbaner/be/pkg/proto/msg"
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/Shopify/sarama"
 	"github.com/golang/protobuf/proto"
 
-	promePkg "Open_IM/pkg/common/prometheus"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
 )
 
 type PersistentConsumerHandler struct {

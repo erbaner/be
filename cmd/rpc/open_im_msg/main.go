@@ -1,12 +1,13 @@
 package main
 
 import (
-	"Open_IM/internal/rpc/msg"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	promePkg "Open_IM/pkg/common/prometheus"
 	"flag"
 	"fmt"
+
+	"github.com/erbaner/be/internal/rpc/msg"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
 )
 
 func main() {

@@ -1,8 +1,8 @@
 package call_back_struct
 
 import (
-	"Open_IM/pkg/proto/msg"
-	sdk_ws "Open_IM/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/proto/msg"
+	sdk_ws "github.com/erbaner/be/pkg/proto/sdk_ws"
 )
 
 type CallbackBeforeSendSingleMsgReq struct {

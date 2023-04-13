@@ -7,8 +7,8 @@
 package user
 
 import (
-	conversation "Open_IM/pkg/proto/conversation"
-	sdk_ws "Open_IM/pkg/proto/sdk_ws"
+	conversation "github.com/erbaner/be/pkg/proto/conversation"
+	sdk_ws "github.com/erbaner/be/pkg/proto/sdk_ws"
 	context "context"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"

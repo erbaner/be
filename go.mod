@@ -1,4 +1,4 @@
-module Open_IM
+module github.com/erbaner/be
 
 go 1.15
 

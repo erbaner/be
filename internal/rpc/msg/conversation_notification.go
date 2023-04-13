@@ -1,11 +1,11 @@
 package msg
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/log"
-	open_im_sdk "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/log"
+	open_im_sdk "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 )
@@ -69,7 +69,7 @@ func ConversationChangeNotification(operationID, userID string) {
 	SetConversationNotification(operationID, userID, userID, constant.ConversationOptChangeNotification, ConversationChangedTips, tips)
 }
 
-//会话未读数同步
+// 会话未读数同步
 func ConversationUnreadChangeNotification(operationID, userID, conversationID string, updateUnreadCountTime int64) {
 	log.NewInfo(operationID, utils.GetSelfFuncName())
 	ConversationChangedTips := &open_im_sdk.ConversationUpdateTips{

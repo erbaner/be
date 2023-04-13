@@ -2,13 +2,13 @@ package multi_terminal_login
 
 //
 //import (
-//	"Open_IM/internal/push/content_struct"
-//	"Open_IM/internal/push/logic"
-//	"Open_IM/pkg/common/config"
-//	"Open_IM/pkg/common/constant"
-//	"Open_IM/pkg/common/db"
-//	pbChat "Open_IM/pkg/proto/msg"
-//	"Open_IM/pkg/utils"
+//	"github.com/erbaner/be/internal/push/content_struct"
+//	"github.com/erbaner/be/internal/push/logic"
+//	"github.com/erbaner/be/pkg/common/config"
+//	"github.com/erbaner/be/pkg/common/constant"
+//	"github.com/erbaner/be/pkg/common/db"
+//	pbChat "github.com/erbaner/be/pkg/proto/msg"
+//	"github.com/erbaner/be/pkg/utils"
 //)
 //
 //const  DayOfSecond = 24*60*60

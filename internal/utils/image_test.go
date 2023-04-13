@@ -1,10 +1,11 @@
 package utils
 
 import (
-	"Open_IM/pkg/utils"
 	"path/filepath"
 	"runtime"
 	"testing"
+
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/stretchr/testify/assert"
 )

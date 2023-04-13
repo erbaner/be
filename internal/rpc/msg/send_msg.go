@@ -1,21 +1,6 @@
 package msg
 
 import (
-	utils2 "Open_IM/internal/utils"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	rocksCache "Open_IM/pkg/common/db/rocks_cache"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/common/token_verify"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	cacheRpc "Open_IM/pkg/proto/cache"
-	pbConversation "Open_IM/pkg/proto/conversation"
-	pbChat "Open_IM/pkg/proto/msg"
-	pbPush "Open_IM/pkg/proto/push"
-	pbRelay "Open_IM/pkg/proto/relay"
-	sdk_ws "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
 	"context"
 	"errors"
 	"math/rand"
@@ -24,13 +9,29 @@ import (
 	"sync"
 	"time"
 
-	promePkg "Open_IM/pkg/common/prometheus"
+	utils2 "github.com/erbaner/be/internal/utils"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	rocksCache "github.com/erbaner/be/pkg/common/db/rocks_cache"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/common/token_verify"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	cacheRpc "github.com/erbaner/be/pkg/proto/cache"
+	pbConversation "github.com/erbaner/be/pkg/proto/conversation"
+	pbChat "github.com/erbaner/be/pkg/proto/msg"
+	pbPush "github.com/erbaner/be/pkg/proto/push"
+	pbRelay "github.com/erbaner/be/pkg/proto/relay"
+	sdk_ws "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
+
+	promePkg "github.com/erbaner/be/pkg/common/prometheus"
 
 	go_redis "github.com/go-redis/redis/v8"
 	"github.com/golang/protobuf/proto"
 )
 
-//When the number of group members is greater than this value，Online users will be sent first，Guaranteed service availability
+// When the number of group members is greater than this value，Online users will be sent first，Guaranteed service availability
 const GroupMemberNum = 500
 
 var (

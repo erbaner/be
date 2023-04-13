@@ -1,10 +1,11 @@
 package im_mysql_model
 
 import (
-	"Open_IM/pkg/common/db"
 	"errors"
 	"math/rand"
 	"time"
+
+	"github.com/erbaner/be/pkg/common/db"
 )
 
 /**

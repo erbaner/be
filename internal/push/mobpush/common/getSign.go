@@ -1,11 +1,12 @@
 package common
 
 import (
-	"Open_IM/pkg/common/config"
 	"crypto/md5"
 	"encoding/hex"
 	"fmt"
 	"io"
+
+	"github.com/erbaner/be/pkg/common/config"
 )
 
 func GetSign(paramsStr string) string {

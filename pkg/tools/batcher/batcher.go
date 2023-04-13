@@ -1,7 +1,6 @@
 package batcher
 
 import (
-	"Open_IM/pkg/common/log"
 	"context"
 	"errors"
 	"hash/crc32"

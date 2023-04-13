@@ -1,9 +1,10 @@
 package im_mysql_model
 
 import (
-	"Open_IM/pkg/common/db"
-	"Open_IM/pkg/utils"
 	"time"
+
+	"github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/utils"
 )
 
 func InsertInToUserBlackList(black db.Black) error {

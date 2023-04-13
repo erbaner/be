@@ -1,7 +1,7 @@
 package cms_api_struct
 
 import (
-	pbCommon "Open_IM/pkg/proto/sdk_ws"
+	pbCommon "github.com/erbaner/be/pkg/proto/sdk_ws"
 )
 
 type GetChatLogsReq struct {

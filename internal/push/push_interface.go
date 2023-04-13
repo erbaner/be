@@ -1,6 +1,6 @@
 package push
 
-import "Open_IM/pkg/common/constant"
+import "github.com/erbaner/be/pkg/common/constant"
 
 var PushTerminal = []int{constant.IOSPlatformID, constant.AndroidPlatformID, constant.WebPlatformID}
 

@@ -7,18 +7,19 @@
 package manage
 
 import (
-	api "Open_IM/pkg/base_info"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/common/token_verify"
-	"Open_IM/pkg/grpc-etcdv3/getcdv3"
-	pbRelay "Open_IM/pkg/proto/relay"
-	rpc "Open_IM/pkg/proto/user"
-	"Open_IM/pkg/utils"
 	"context"
 	"net/http"
 	"strings"
+
+	api "github.com/erbaner/be/pkg/base_info"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/common/token_verify"
+	"github.com/erbaner/be/pkg/grpc-etcdv3/getcdv3"
+	pbRelay "github.com/erbaner/be/pkg/proto/relay"
+	rpc "github.com/erbaner/be/pkg/proto/user"
+	"github.com/erbaner/be/pkg/utils"
 
 	"github.com/gin-gonic/gin"
 )

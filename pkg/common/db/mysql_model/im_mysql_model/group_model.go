@@ -1,10 +1,11 @@
 package im_mysql_model
 
 import (
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	"Open_IM/pkg/utils"
 	"fmt"
+
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/utils"
 
 	"time"
 )

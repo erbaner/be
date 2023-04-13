@@ -1,8 +1,9 @@
 package utils
 
 import (
-	"Open_IM/pkg/common/constant"
 	"testing"
+
+	"github.com/erbaner/be/pkg/common/constant"
 
 	"github.com/stretchr/testify/assert"
 )

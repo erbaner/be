@@ -1,15 +1,15 @@
 package logic
 
 import (
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/db"
-	kfk "Open_IM/pkg/common/kafka"
-	"Open_IM/pkg/common/log"
-	pbMsg "Open_IM/pkg/proto/msg"
-	server_api_params "Open_IM/pkg/proto/sdk_ws"
-	"Open_IM/pkg/utils"
 	"github.com/Shopify/sarama"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/db"
+	kfk "github.com/erbaner/be/pkg/common/kafka"
+	"github.com/erbaner/be/pkg/common/log"
+	pbMsg "github.com/erbaner/be/pkg/proto/msg"
+	server_api_params "github.com/erbaner/be/pkg/proto/sdk_ws"
+	"github.com/erbaner/be/pkg/utils"
 	"github.com/golang/protobuf/proto"
 )
 

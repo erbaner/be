@@ -1,15 +1,16 @@
 package msg
 
 import (
-	cbApi "Open_IM/pkg/call_back_struct"
-	"Open_IM/pkg/common/callback"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/constant"
-	"Open_IM/pkg/common/http"
-	"Open_IM/pkg/common/log"
-	pbChat "Open_IM/pkg/proto/msg"
-	"Open_IM/pkg/utils"
 	http2 "net/http"
+
+	cbApi "github.com/erbaner/be/pkg/call_back_struct"
+	"github.com/erbaner/be/pkg/common/callback"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/constant"
+	"github.com/erbaner/be/pkg/common/http"
+	"github.com/erbaner/be/pkg/common/log"
+	pbChat "github.com/erbaner/be/pkg/proto/msg"
+	"github.com/erbaner/be/pkg/utils"
 )
 
 func copyCallbackCommonReqStruct(msg *pbChat.SendMsgReq) cbApi.CommonCallbackReq {

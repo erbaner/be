@@ -1,11 +1,12 @@
 package main
 
 import (
-	"Open_IM/pkg/common/config"
-	mongo2 "Open_IM/test/mongo"
 	"context"
 	"flag"
 	"fmt"
+
+	"github.com/erbaner/be/pkg/common/config"
+	mongo2 "github.com/erbaner/be/test/mongo"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )

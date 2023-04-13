@@ -1,8 +1,9 @@
 package im_mysql_model
 
 import (
-	"Open_IM/pkg/common/db"
 	"errors"
+
+	"github.com/erbaner/be/pkg/common/db"
 
 	_ "gorm.io/gorm"
 )

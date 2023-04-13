@@ -1,6 +1,6 @@
 package im_mysql_model
 
-import "Open_IM/pkg/common/db"
+import "github.com/erbaner/be/pkg/common/db"
 
 func SetClientInitConfig(m map[string]interface{}) error {
 	result := db.DB.MysqlDB.DefaultGormDB().Model(&db.ClientInitConfig{}).Where("1=1").Updates(m)

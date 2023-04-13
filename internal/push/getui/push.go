@@ -1,14 +1,15 @@
 package getui
 
 import (
-	"Open_IM/internal/push"
-	"Open_IM/pkg/common/config"
-	"Open_IM/pkg/common/db"
-	"Open_IM/pkg/common/log"
-	"Open_IM/pkg/utils"
 	"bytes"
 	"crypto/sha256"
 	"errors"
+
+	"github.com/erbaner/be/internal/push"
+	"github.com/erbaner/be/pkg/common/config"
+	"github.com/erbaner/be/pkg/common/db"
+	"github.com/erbaner/be/pkg/common/log"
+	"github.com/erbaner/be/pkg/utils"
 
 	//"crypto/sha512"
 	"encoding/hex"
