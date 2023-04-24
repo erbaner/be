@@ -3,9 +3,12 @@
 NAME=open_im_api
 BIN_DIR=../../bin/
 
-OS:= $(or $(os),linux)
+
+OS:= $(or $(os),$(RUN_OS))
+OS:= $(or $(OS),darwin)
 ARCH:=$(or $(arch),amd64)
 all: gotool build
+
 
 ifeq ($(OS),windows)
 
@@ -18,8 +21,7 @@ BINARY_NAME=${NAME}
 endif
 
 build:
-	echo "----> build"
-	CGO_ENABLED=0 GOOS=${OS} GOARCH=${ARCH} go build -ldflags="-w -s"
+	GO111MODULE=on CGO_ENABLED=0 GOOS=${OS} GOARCH=${ARCH} go build -ldflags="-w -s"
 
 run:
 	@go run ./
@@ -29,7 +31,6 @@ gotool:
 	go vet ./
 
 install:build
-	echo "----> install"
 	mv ${BINARY_NAME} ${BIN_DIR}
 
 clean:

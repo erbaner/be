@@ -3,7 +3,8 @@
 NAME=open_im_conversation
 BIN_DIR=../../../bin/
 
-OS:= $(or $(os),linux)
+OS:= $(or $(os),$(RUN_OS))
+OS:= $(or $(OS),darwin)
 ARCH:=$(or $(arch),amd64)
 all: gotool build
 
@@ -18,7 +19,7 @@ BINARY_NAME=${NAME}
 endif
 
 build:
-	CGO_ENABLED=0 GOOS=${OS} GOARCH=${ARCH} go build -ldflags="-w -s"
+	GO111MODULE=on CGO_ENABLED=0 GOOS=${OS} GOARCH=${ARCH} go build -ldflags="-w -s"
 
 run:
 	@go run ./
