@@ -105,8 +105,8 @@ services:
       - 9090:9090
     container_name: minio
     volumes:
-      - /mnt/data:/data
-      - /mnt/config:/root/.minio
+      - ~/mnt/data:/data
+      - ~/mnt/config:/root/.minio
     environment:
       MINIO_ROOT_USER: ${USER}
       MINIO_ROOT_PASSWORD: ${PASSWORD}

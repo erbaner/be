@@ -44,7 +44,7 @@ for i in ${service_port_name[*]}; do
 done
 
 #Check launched service process
-check=$(ps aux | grep -w ./${msg_transfer_name} | grep -v grep | wc -l)
+check=$(ps -ef | grep -w ./${msg_transfer_name} | grep -v grep | wc -l)
 if [ $check -eq ${msg_transfer_service_num} ]; then
   echo -e ${GREEN_PREFIX}"none  port has been listening,belongs service is openImMsgTransfer"${COLOR_SUFFIX}
 else
@@ -54,7 +54,7 @@ else
 fi
 
 
-check=$(ps aux | grep -w ./${cron_task_name} | grep -v grep | wc -l)
+check=$(ps -ef | grep -w ./${cron_task_name} | grep -v grep | wc -l)
 if [ $check -ge 1 ]; then
  echo -e ${GREEN_PREFIX}"none  port has been listening,belongs service is openImCronTask"${COLOR_SUFFIX}
 else

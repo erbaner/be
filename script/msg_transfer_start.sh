@@ -11,10 +11,10 @@ prome_ports=($ports_array)
 
 #Check if the service exists
 #If it is exists,kill this process
-check=`ps aux | grep -w ./${msg_transfer_name} | grep -v grep| wc -l`
+check=`ps -ef | grep -w ./${msg_transfer_name} | grep -v grep| wc -l`
 if [ $check -ge 1 ]
 then
-oldPid=`ps aux | grep -w ./${msg_transfer_name} | grep -v grep|awk '{print $2}'`
+oldPid=`ps -ef | grep -w ./${msg_transfer_name} | grep -v grep|awk '{print $2}'`
  kill -9 $oldPid
 fi
 #Waiting port recycling
@@ -31,10 +31,10 @@ for ((i = 0; i < ${msg_transfer_service_num}; i++)); do
 done
 
 #Check launched service process
-check=`ps aux | grep -w ./${msg_transfer_name} | grep -v grep| wc -l`
+check=`ps -ef | grep -w ./${msg_transfer_name} | grep -v grep| wc -l`
 if [ $check -ge 1 ]
 then
-newPid=`ps aux | grep -w ./${msg_transfer_name} | grep -v grep|awk '{print $2}'`
+newPid=`ps -ef | grep -w ./${msg_transfer_name} | grep -v grep|awk '{print $2}'`
 allPorts=""
     echo -e ${SKY_BLUE_PREFIX}"SERVICE START SUCCESS "${COLOR_SUFFIX}
     echo -e ${SKY_BLUE_PREFIX}"SERVICE_NAME: "${COLOR_SUFFIX}${YELLOW_PREFIX}${msg_transfer_name}${COLOR_SUFFIX}

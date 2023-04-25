@@ -59,7 +59,8 @@ service_prometheus_port_name=(
 
 for ((i = 0; i < ${#service_filename[*]}; i++)); do
   #Check whether the service exists
-  service_name="ps -aux |grep -w ${service_filename[$i]} |grep -v grep"
+  # service_name="ps -aux |grep -w ${service_filename[$i]} |grep -v grep"
+  service_name="ps -ef |grep -w ${service_filename[$i]} |grep -v grep"
   count="${service_name}| wc -l"
 
   if [ $(eval ${count}) -gt 0 ]; then
@@ -89,7 +90,12 @@ for ((i = 0; i < ${#service_filename[*]}; i++)); do
     echo $cmd
     nohup $cmd >>../logs/openIM.log 2>&1 &
     sleep 1
-    pid="netstat -ntlp|grep $j |awk '{printf \$7}'|cut -d/ -f1"
+    pid=""
+    if [ "$(uname)" == "Darwin" ]; then
+      pid="lsof -i tcp:${service_ports[$j]} | grep ${service_ports[$j]} | awk '{print \$2}'"
+    else
+      pid="netstat -ntlp|grep ${service_ports[$j]} |awk '{printf \$7}'|cut -d/ -f1" 
+    fi 
     echo -e "${GREEN_PREFIX}${service_filename[$i]} start success,port number:${service_ports[$j]} pid:$(eval $pid)$COLOR_SUFFIX"
   done
 done
